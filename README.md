@@ -1,7 +1,7 @@
 # DosGAN-PyTorch
 PyTorch Implementation of "Unpaired Image-to-Image Translation with Domain Supervision".
 
-<img src="examples/facescrub_intra.png" width="850px" height="370px"/>
+<img src="examples/facescrub_intra.png" />
 
 
 # Dependency:
