@@ -22,12 +22,12 @@ PyTorch 0.4.0
 
 4. Train DosGAN:
 
-   `$ python main_dosgan.py --mode train  --model_dir dosgan --cls_save_dir dosgan_cls/models` 
+   `$ python main_dosgan.py --mode train  --model_dir dosgan --cls_save_dir dosgan_cls/models --train_data_path train_dir --test_data_path val_dir`
 
 5. Train DosGAN-c:
 
-   `$ python main_dosgan.py --mode train  --model_dir dosgan_c --cls_save_dir dosgan_cls/models --non_conditional false`
+   `$ python main_dosgan.py --mode train  --model_dir dosgan_c --cls_save_dir dosgan_cls/models --non_conditional false --train_data_path train_dir --test_data_path val_dir`
 
 6. Test:
 
-   `$ python main_dosgan.py --mode test  --model_dir dosgan_c --cls_save_dir dosgan_cls/models`
+   `$ python main_dosgan.py --mode test  --model_dir dosgan_c --cls_save_dir dosgan_cls/models --train_data_path train_dir --test_data_path val_dir`
