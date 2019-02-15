@@ -76,7 +76,7 @@ PyTorch 0.4.0
 
 9. Train DosGAN for multiple season translation:
 
-   `$ python main_dosgan.py --mode train  --model_dir dosgan_season --cls_save_dir dosgan_season_cls/models --ft_num 64 --c_dim 4 --image_size 256 --lambda_fs 0.15 --train_data_path season_train_dir --test_data_path season_val_dir`
+   `$ python main_dosgan.py --mode train  --model_dir dosgan_season --cls_save_dir dosgan_season_cls/models --ft_num 64 --c_dim 4 --image_size 256 --lambda_fs 0.15 --num_iters 300000 --train_data_path season_train_dir --test_data_path season_val_dir`
    
    
     
