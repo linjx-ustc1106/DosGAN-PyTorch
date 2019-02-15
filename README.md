@@ -16,9 +16,9 @@ PyTorch 0.4.0
 
    `$ python split2train_val.py root_dir train_dir val_dir`
 
-3. Train a classifier for domain feature extraction saved to `dosgan_cls`:
+3. Train a classifier for domain feature extraction and save it to `dosgan_cls`:
 
-   `$ python main_dosgan.py --mode cls  --model_dir dosgan_cls`
+   `$ python main_dosgan.py --mode cls  --model_dir dosgan_cls --train_data_path train_dir --test_data_path val_dir`
 
 4. Train DosGAN:
 
@@ -70,6 +70,13 @@ PyTorch 0.4.0
            |   └── ...
            ...
         
- 
+8. Giving multiple season translation for example ([season dataset](https://github.com/AAnoosheh/ComboGAN)). Train a classifier for season domain feature extraction and save it to `dosgan_season_cls`:
+
+   `$ python main_dosgan.py --mode cls  --model_dir dosgan_season_cls --ft_num 64 --c_dim 4 --image_size 256 --train_data_path season_train_dir --test_data_path season_val_dir`
+
+9. Train DosGAN for multiple season translation:
+
+   `$ python main_dosgan.py --mode train  --model_dir dosgan_season --cls_save_dir dosgan_season_cls/models --ft_num 64 --c_dim 4 --image_size 256 --lambda_fs 0.15 --train_data_path season_train_dir --test_data_path season_val_dir`
+   
    
     
