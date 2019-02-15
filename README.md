@@ -35,7 +35,8 @@ PyTorch 0.4.0
 7. Test DosGAN-c:
 
    `$ python main_dosgan.py --mode test  --model_dir dosgan_c --cls_save_dir dosgan_cls/models --non_conditional false --train_data_path train_dir --test_data_path val_dir`
-8. For other kinds of dataset, you can place images like:
+   
+For other kinds of dataset, you can place train set and test set like:
 
     data
     ├── YOUR_DATASET_train_dir
@@ -52,3 +53,23 @@ PyTorch 0.4.0
         |   ├── 2.jpg
         |   └── ...
         ...
+        
+    data
+    ├── YOUR_DATASET_val_dir
+        ├── damain1
+        |   ├── 1.jpg
+        |   ├── 2.jpg
+        |   └── ...
+        ├── domain2
+        |   ├── 1.jpg
+        |   ├── 2.jpg
+        |   └── ...
+        ├── domain3
+        |   ├── 1.jpg
+        |   ├── 2.jpg
+        |   └── ...
+        ...
+        
+ 
+   
+    
