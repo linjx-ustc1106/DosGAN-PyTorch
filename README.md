@@ -81,9 +81,10 @@ PyTorch 0.4.0
    
  # Results:
  1. Multiple identity translation
-   1.1 Results of DosGAN
+ 
+ **# Results of DosGAN**:
   <img src="examples/dosgan_identity.jpg" />
-   1.2 Results of DosGAN-c
+ **# Results of DosGAN-c**:
   <img src="examples/dosganc_identity.jpg" />
  2. Multiple season translation:
  <img src="examples/season.jpg" />
