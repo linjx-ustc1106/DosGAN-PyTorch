@@ -84,12 +84,12 @@ PyTorch 0.4.0
  
  **# Results of DosGAN**:
  
-  <img src="examples/dosgan_identity.jpg" />
+  <img src="examples/dosgan_identity.jpg" width="50%"/>
   
  **# Results of DosGAN-c**:
  
-  <img src="examples/dosganc_identity.jpg" />
+  <img src="examples/dosganc_identity.jpg" width="50%" />
   
  ### 2. Multiple season translation:
  
- <img src="examples/season.jpg" />
+ <img src="examples/season.jpg" width="50%" />
