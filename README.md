@@ -92,4 +92,4 @@ PyTorch 0.4.0
   
  ### 2. Multiple season translation:
  
- <img src="examples/season.jpg" width="50%" />
+ <img src="examples/season.jpg" width="70%" />
