@@ -1,5 +1,5 @@
 # DosGAN-PyTorch
-PyTorch Implementation of [Unpaired Image-to-Image Translation with Domain Supervision](https://arxiv.org/abs/1902.03782).
+PyTorch Implementation of [Exploring Explicit Domain Supervision for Latent Space Disentanglement in Unpaired Image-to-Image Translation](https://arxiv.org/abs/1902.03782).
 
 <img src="examples/facescrub_intra.png" />
 
