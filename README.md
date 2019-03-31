@@ -10,6 +10,7 @@ Python 2.7
 PyTorch 0.4.0
 
 # Usage:
+### Multiple identity translation
 1. Downloading Facescrub dataset following http://www.vintage.winklerbros.net/facescrub.html, and save it to `root_dir`.
 
 2. Splitting training and testing sets into `train_dir` and `val_dir`: 
@@ -35,8 +36,8 @@ PyTorch 0.4.0
 7. Test DosGAN-c:
 
    `$ python main_dosgan.py --mode test  --model_dir dosgan_c --cls_save_dir dosgan_cls/models --non_conditional false --train_data_path train_dir --test_data_path val_dir`
-   
-   For other kinds of dataset, you can place train set and test set like:
+### Other mutliple domain translation
+1. For other kinds of dataset, you can place train set and test set like:
 
        data
        ├── YOUR_DATASET_train_dir
@@ -70,11 +71,11 @@ PyTorch 0.4.0
            |   └── ...
            ...
         
-8. Giving multiple season translation for example ([season dataset](https://github.com/AAnoosheh/ComboGAN)). Train a classifier for season domain feature extraction and save it to `dosgan_season_cls`:
+2. Giving multiple season translation for example ([season dataset](https://github.com/AAnoosheh/ComboGAN)). Train a classifier for season domain feature extraction and save it to `dosgan_season_cls`:
 
    `$ python main_dosgan.py --mode cls  --model_dir dosgan_season_cls --ft_num 64 --c_dim 4 --image_size 256 --train_data_path season_train_dir --test_data_path season_val_dir`
 
-9. Train DosGAN for multiple season translation:
+3. Train DosGAN for multiple season translation:
 
    `$ python main_dosgan.py --mode train  --model_dir dosgan_season --cls_save_dir dosgan_season_cls/models --ft_num 64 --c_dim 4 --image_size 256 --lambda_fs 0.15 --num_iters 300000 --train_data_path season_train_dir --test_data_path season_val_dir`
    
